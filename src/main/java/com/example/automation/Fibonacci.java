@@ -43,4 +43,13 @@ public class Fibonacci {
         }
         return series;
     }
+    public int duplicateFibonacci1(int n) {
+        if (n <= 1) return n;
+        return duplicateFibonacci1(n - 1) + duplicateFibonacci1(n - 2);
+    }
+    
+    public int duplicateFibonacci2(int n) {
+        if (n <= 1) return n;
+        return duplicateFibonacci2(n - 1) + duplicateFibonacci2(n - 2);
+    }
 }
