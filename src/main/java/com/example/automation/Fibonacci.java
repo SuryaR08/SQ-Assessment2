@@ -44,13 +44,18 @@ public class Fibonacci {
         return getNthFibonacci(n - 1) + getNthFibonacci(n - 2);
     }
 
-    public int duplicateFibonacci1(int n) {
-        if (n <= 1){
-            return n;
-        }
-        if (n <= 1){
-            return n;
-        }
-        return duplicateFibonacci1(n - 1) + duplicateFibonacci1(n - 2);
+    public int calculate(int n) {
+        if (n <= 1) return n;
+        return calculate(n - 1) + calculate(n - 2);
+    }
+
+    public int calculateDuplicate1(int n) { // Intentional duplicate
+        if (n <= 1) return n;
+        return calculateDuplicate1(n - 1) + calculateDuplicate1(n - 2);
+    }
+
+    public int calculateDuplicate2(int n) { // Intentional duplicate
+        if (n <= 1) return n;
+        return calculateDuplicate2(n - 1) + calculateDuplicate2(n - 2);
     }
 }
