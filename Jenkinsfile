@@ -54,8 +54,9 @@ pipeline {
                 set PATH=%MAVEN_PATH%;%PATH%
                 mvn sonar:sonar ^
                   -Dsonar.projectKey=SQ-Assessment2 ^
-                  -Dsonar.sources=src/main/java/com/example/automation ^
-                  -Dsonar.tests=src/test/java/com/example/automation ^
+                  -Dsonar.sources=src/main/java ^
+                  -Dsonar.tests=src/test/java ^
+                  -Dsonar.java.binaries=target/classes ^
                   -Dsonar.host.url=http://localhost:9000 ^
                   -Dsonar.token=%SONAR_TOKEN%
                 '''
