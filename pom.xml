@@ -5,10 +5,20 @@
     <artifactId>automation</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
+        <sonar.projectKey>SQ-Assessment2</sonar.projectKey>
+        <sonar.host.url>http://localhost:9000</sonar.host.url>
+        <sonar.sources>src/main/java</sonar.sources>
+        <sonar.tests>src/test/java</sonar.tests>
+        <sonar.java.binaries>target/classes</sonar.java.binaries>
+        <sonar.sourceEncoding>UTF-8</sonar.sourceEncoding>
+        <sonar.duplications.hashtable>200000</sonar.duplications.hashtable>
+        <sonar.duplications>always</sonar.duplications>
     </properties>
+
 
     <dependencies>
         <dependency>

@@ -58,7 +58,9 @@ pipeline {
                   -Dsonar.tests=src/test/java ^
                   -Dsonar.java.binaries=target/classes ^
                   -Dsonar.host.url=http://localhost:9000 ^
-                  -Dsonar.token=%SONAR_TOKEN%
+                  -Dsonar.token=%SONAR_TOKEN% ^
+                  -Dsonar.duplications.hashtable=200000 ^
+                  -Dsonar.duplications=always
                 '''
             }
         }
